@@ -1,0 +1,344 @@
+body{
+    font-family: 'ABeeZee', sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja1{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.caja1 #foto{
+    width: 20%;
+    border-radius: 50%;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;  /* hace q la lista ya no este debajo de la otra sino al lado en el mismo reglon*/ 
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c46546;
+}
+
+.productos{
+    width: 940px;   
+    margin: 0 auto;
+    padding: 50px;    
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top; 
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000; /*1ro: el grosor, 2do el estilo, 3ero color*/
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.productos li:hover{/*el hover es el MOVIMIENTO del mouese*/
+    border-color: #e98be4; 
+    transform: scale(1.1);  
+}
+.productos li:active{/*el hover es el CLICK  del mouese*/
+    border-color:rgb(172, 0, 134);
+    color: rgb(172, 0, 134);
+}
+.productos h2{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/*
+.productos li:hover h2{esta linea de codigo de cmabio de tamaño va aqui porf el orden y asi no se cancela
+    font-size: 30px;   
+}*/
+
+.descripcion{
+    font-size: 18px;    
+}
+
+.precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(img/bg.jpg); /* el backgroundg repide la img hasta completar el espacio*/
+    padding: 40px;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 15px;
+    margin: 20px;
+}
+
+form{
+    margin: 40px 20px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    font-size: 17px;
+}
+
+#mensaje{
+    font-size: 16px;   
+}
+
+fieldset legend{
+    margin-top: 5px;
+    padding: 5px;
+}
+
+select{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.checkbox{
+    margin: 25px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(221, 47, 114);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer; /* cambia el cursor por la manito*/
+}
+
+.enviar:hover{
+    background: rgb(158, 20, 112);
+    transform: scale(1.2); /* TRANSFORM tiene mas efectos como por ejmeplo rotar el elemento con "rotate(numero+deg)" 
+    se debe poner en la misma linea los efectos de lo contrario solo agarrara el ultimo*/
+}
+
+table{
+    margin: 40px 20px;    
+}
+
+
+thead{
+    background:rgb(48, 44, 45);
+    color: #ffffff;
+    font-weight: bold;    
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    font-size: 20px;
+}
+
+/* CSS para la pagina index */
+
+.banner{
+    width: 100%;
+}
+
+/* 
+main > p{ //selecciona solo los parrafos q son hijos del MAIN
+background: red;
+}
+
+img + p{ //el 1er parrafo despues de la imagen (es hermano de la p siguiente)
+background: red;
+}
+
+img ~ p{ //selecciona todos los parrafos q vienen desppues de la img
+background: red;
+}
+
+.principal p:not(#mision){ //aplica cambios a todos los parrafos menos al mencionado que tiene una ID
+    background: red; 
+}
+
+*/
+
+.principal{
+    padding: 3em;
+    background: white;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /* EStamos diciendole que queremos que sea 2 veces más grande q el tamaño regular del navegador */
+    margin: 0 0 1em;
+    clear: left;
+}
+
+/* 
+.titulo-principal::first-letter{  Efecto en la primera letra 
+    font-weight: bold;
+}
+
+.titulo-principal::before{  Inserta el elemento mencionado antes del mismo
+    content: "[";
+}
+
+.titulo-principal::after{  Inserta el elemento mencionado al final
+    content: "]";
+}
+
+p::first-line{  /* Efecto en la primera linea , en este caso la 1er linea del parrafo 
+    font-style: italic;
+} */
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.pencil{
+    width: 120px;
+    float: left;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(white , grey);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;  
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: linear-gradient(grey, black);
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto 3em;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display:inline-block;
+    vertical-align: top;
+    margin: 10px 0px 0px 20px;
+}
+
+.items{
+    line-height: 1.5;    
+}
+
+.items::before{
+    content: "■";
+}
+
+.items:first-child{
+    font-weight:bold;
+}
+
+/*
+.items:first-child // seleciona el primer elemento de esta lista
+.items:last-child // seleciona el ultimo elemento de esta lista
+.items:nth-child(el numero de la fila) // seleciona el elemento indicado de esta lista
+.items:nth-child(numero de fila + n ) // seleciona el elemento indicado y tambien los demas 
+elementos de n en n de la lista
+*/
+
+.imagen-diferenciales{
+    width: 50%;
+    transition: 400ms;
+    box-shadow: 10px 10px 25px 15px #000000;
+    /*box-shadow: 10px 10px 20px 15px #000000; /*1er: arriba o abajo 2do: el costado 3ero: la opacidad 4ro: la epxpansion*/
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.4;
+}
+
+.video{
+    width: 560px;
+    margin: 0 auto;
+    
+}
+@media screen and (max-width: 480px) {
+
+    h1{
+        text-align: center;
+    }
+
+    .caja1 #foto{
+        width: 35%;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+    }
+
+    .caja1, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales{
+        margin: 0px auto 20px;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+    .productos{
+        width: auto;  
+    }
+  
+    .productos li{
+        width:100%;
+        display: block;      
+        margin: 0 0 10px;
+    }
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja1">
+                <h1><img id="foto" src="img/foto.png" alt="foto de Perfil"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+                <label for="correoelectronico">Correo electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com"> 
+                <label for="telefono">Teléfono (Opcional)</label>
+                <input type="tel" id="telefono" class="input-padron" placeholder="(xx) xxxx-xxxx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="40%" rows="10" id="mensaje" required></textarea>
+
+                <fieldset>
+                    <legend>Selecciona el tipo de dibujo que deseado</legend>
+
+                    <label for="radio-boceto"><input type="radio" name="tipo" value="boceto" id="radio-boceto">Boceto</label>                    
+                    <label for="radio-simple"><input type="radio" name="tipo" value="simple" id="radio-simple" checked>Dibujo simple</label>                    
+                    <label for="radio-elaborado"><input type="radio" name="tipo" value="elaborado" id="radio-elaborado">Dibujo elaborado</label>
+                    
+                </fieldset> <!--le estamos diciendo al html q este grupo hace referencia a la misma informacion -->
+
+                <fieldset>
+                    <legend>Tiempo límite de entrega</legend>
+                    <select>
+                        <option>1 semanas</option>
+                        <option>2 semanas</option>
+                        <option>1 mes</option>
+                    </select>
+                </fieldset>
+                               
+                <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir novedades?</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+
+            </form>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>10 Hs ~ 17 Hs</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>09 Hs ~ 16 Hs</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>10 Hs ~ 17 Hs</td>
+                    </tr>
+                </tbody>                               
+            </table>
+
+        </main>
+
+        <footer>
+            <img id="logo" src="img/logo.png" width="200px">
+            <p class="copyright">&copy Copyright LiLi - 2023</p>
+        </footer>
+
+    </body>
+</html>
